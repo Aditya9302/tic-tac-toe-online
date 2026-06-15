@@ -1,0 +1,32 @@
+body {
+  font-family: Arial;
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.board button {
+  height: 100px;
+  font-size: 30px;
+}
