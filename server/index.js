@@ -4,13 +4,23 @@ const cors = require("cors");
 const { Server } = require("socket.io");
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://tic-tac-toe-online-orcin.vercel.app",
+    ],
+  })
+);
 
 const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "*",
+    origin: [
+      "http://localhost:5173",
+      "https://tic-tac-toe-online-orcin.vercel.app",
+    ],
     methods: ["GET", "POST"],
   },
 });
