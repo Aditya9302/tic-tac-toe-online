@@ -80,8 +80,8 @@ function App() {
           {winner && (
             <h2 style={{ color: "green" }}>
               {winner === "Draw"
-                ? "Try harder like you tried on you ex😂"
-                : "Chalo game me hi sahi jeet toh gayi"}    {/* `Winner: ${winner}` */}
+                ? "It's a draw"
+                : `Winner: ${winner}`}    {/* `Winner: ${winner}` */}
             </h2>
           )}
 
